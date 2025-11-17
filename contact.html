@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Shreya P. S</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">SHREYA</a>
+    <nav class="main-nav" id="nav3">
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+      <button class="menu-btn" id="menu3">☰</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap contact-wrap">
+  <section class="card">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out at <b>shreyaps23cs@rnsit.ac.in</b></p>
+
+    <form id="contactForm" novalidate>
+      <label>Name</label>
+      <input id="nameField" required placeholder="Your name">
+
+      <label>Email</label>
+      <input id="emailField" required type="email" placeholder="you@example.com">
+
+      <label>Message</label>
+      <textarea id="msgField" rows="6" required></textarea>
+
+      <button class="btn" type="submit">Send</button>
+
+      <p id="formMessage" class="muted small"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© <span id="year3"></span> Shreya P. S</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
