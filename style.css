@@ -1,0 +1,129 @@
+:root{
+  --green-light:#e9f7ec;
+  --green:#3aa34a;
+  --green-dark:#1f7a2f;
+  --white:#ffffff;
+  --muted:#6e6e6e;
+  --shadow:0 6px 18px rgba(0,0,0,0.1);
+  --radius:12px;
+}
+
+body{
+  margin:0;
+  background:var(--green-light);
+  font-family:Arial, sans-serif;
+  color:#222;
+}
+
+.wrap{max-width:900px;margin:0 auto;padding:20px}
+
+/* HEADER */
+.site-header{
+  background:var(--white);
+  box-shadow:var(--shadow);
+  position:sticky;top:0;z-index:10;
+}
+.logo{
+  color:var(--green-dark);
+  font-weight:bold;
+  text-decoration:none;
+  font-size:22px;
+}
+.main-nav a{
+  margin-left:14px;
+  text-decoration:none;
+  color:var(--green-dark);
+  font-weight:bold;
+}
+.menu-btn{
+  display:none;
+  border:none;
+  background:none;
+  font-size:22px;
+  margin-left:10px;
+  cursor:pointer;
+  color:var(--green-dark);
+}
+
+/* GRID */
+.main-grid{
+  display:grid;
+  grid-template-columns:300px 1fr;
+  gap:22px;
+}
+
+/* CARDS */
+.card{
+  background:var(--white);
+  padding:20px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+
+/* BUTTONS */
+.btn{
+  background:var(--green);
+  color:white;
+  padding:10px 16px;
+  border-radius:8px;
+  border:none;
+  text-decoration:none;
+  font-weight:bold;
+  cursor:pointer;
+}
+.btn.outline{
+  background:transparent;
+  border:2px solid var(--green);
+  color:var(--green-dark);
+}
+
+/* SKILLS */
+.skills, .projects{
+  padding-left:20px;
+}
+
+/* RESUME */
+.resume-card{
+  padding:28px;
+}
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+}
+.skills-grid li{
+  background:#f0fff3;
+  padding:8px;
+  border-radius:6px;
+  border:1px solid #cfead1;
+}
+
+/* INPUTS */
+input, textarea{
+  width:100%;
+  margin-top:6px;
+  border-radius:6px;
+  padding:10px;
+  border:1px solid #b9e5c0;
+  background:#f6fff7;
+}
+
+/* FOOTER */
+.site-footer{
+  margin-top:20px;
+  text-align:center;
+  color:var(--muted);
+}
+
+/* RESPONSIVE */
+@media(max-width:800px){
+  .main-grid{
+    grid-template-columns:1fr;
+  }
+  .menu-btn{
+    display:inline-block;
+  }
+  .main-nav a{
+    display:none;
+  }
+}
